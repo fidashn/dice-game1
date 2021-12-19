@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+.game-board {
+  display:flex;
+  justify-content: space-around;
+  background-color: #FF9999;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gameoptions-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 10px;
+height: 100vh;
+background-color: #FFAFAF;
+padding:0  0.5rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.players-container {
+height: 100vh;
+width:40vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: "Roboto", sans-serif;
+font-size: 7vmin;
+color:#6ed6d1;
+}
+
+.players-container h1{
+color:#A6F6F1;
+font-size: 7vmin;
+font-family: "Roboto", sans-serif;
+}
+.gamesettings-btn {
+  height:7vmin;
+  width:15vw;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #FFAFAF;
+  background-color: #FBFFE2;
+  border: transparent;
+}
+.dice {
+height:20vmin;
+width:20vmin;
+align-self: center;
+}
+
+.Dice-1 {
+background: url(./images/dice-1.png);
+background-size: 100% 100%;
+}
+.Dice-2 {
+background: url(./images/dice-2.png);
+background-size: 100% 100%;
+}
+.Dice-3 {
+background: url(./images/dice-3.png);
+background-size: 100% 100%;
+}
+.Dice-4 {
+background: url(./images/dice-4.png);
+background-size: 100% 100%;
+}
+.Dice-5 {
+background: url(./images/dice-5.png);
+background-size: 100% 100%;
+}
+.Dice-6 {
+background: url(./images/dice-6.png);
+background-size: 100% 100%;
+}
+
+.Winner {
+  background-color: #FFEBCC;
+  color:#70a8a5;
+  font-size: 9vmin;
+  font-family: "Roboto", sans-serif;
+ }
+
+
+ @media only screen and (min-width: 360px) and (max-width: 768px){
+
+  .players-container h1{
+    font-size: 5vmin;
   }
-}
+  .dice {
+    height:15vmin;
+    width:15vmin;
+    align-self: center;
+    transform: translateX(-1px);
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    .gameoptions-container{
+      width:28vmin;
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    .gamesettings-btn {
+      height:20vmin;
+      width:25vmin;
+      align-self: center;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
+
+ 
